@@ -1,0 +1,16 @@
+
+@font-face {
+    font-family: "Playwrite DE SAS";
+    src: url('fuentes/Playwrite_DE_SAS/PlaywriteDESAS-VariableFont_wght.ttf');
+}
+
+.fuente {
+    font-family: "Playwrite DE SAS";
+    font-size: 70px;
+    font-weight: 100;
+}
+
+.fuente2 {
+    font-family: "Bebas neue";
+    font-size: 80px;
+}

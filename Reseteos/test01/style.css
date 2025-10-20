@@ -1,0 +1,73 @@
+
+/*
+    Un RESET quita los estilos por defecto que tiene un html en el navegador
+*/
+
+/*
+    Para ver los valores por defecto de varias etiquetas, les doy borde
+    para visualizar el margin y padding que tienen por defecto, además de
+    los saltos de línea y los estilos de lista.
+
+    Las tablas por defecto tienen border-collapse: separate.
+*/
+
+/* VISUALIZAR ESTILOS */
+
+header, main, section{
+    border: 1px solid red;
+}
+
+h1, h2, h3,
+form, p, input, label, ul, li, 
+tr, td{
+    border: 1px solid black
+}
+
+/* VALORES RESETEADOS */
+
+html, body, div,
+h1, h2, h3{
+    margin: 0; /*Quita el margin por defecto del html y body*/
+    line-height: 1; /* Quita el interlineado */
+    font-size: 100%; /* Quita el tamaño por defecto */
+    font-weight: normal; /* Quita el bolder de los h1, h2, h3*/
+}
+
+ul {
+	list-style: none; /* Quita el estilo de lista */
+    padding-left: 0; /* Quita el espacio en la izquierda */
+    font-size: 0; /*El navegador interpreta los saltos de línea
+                    que separan los <li> en el html como espacios 
+                    " " y los añade al final de cada <li> */
+}
+
+li{
+    font-size: 16px; /* Se reestablece el tamaño por defecto. */
+    display: inline-block;
+}
+
+a{
+    text-decoration: none; /* Quita el color azul por defecto */
+    color: inherit; /* Color por defecto del contenedor padre */
+}
+
+input{
+    padding: 0;
+    margin: 0;
+    border: none; /* Quita los bordes por defecto */
+    background-color: inherit; /* Quita el color gris de fondo del submit, se puede usar transparent */
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+tr{
+    display: inline-block; /* Quita el salto de línea, conserva las propiedades de un bloque. */
+}
+
+td{
+    margin: 0;
+    padding: 0;
+}

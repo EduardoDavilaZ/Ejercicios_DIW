@@ -1,0 +1,78 @@
+/*  
+    Este archivo CSS sirve para estandarizar y homogenizar el estilo por defecto 
+    del navegador para que se vea igual en todos los navegadores.
+*/
+
+html {
+    line-height: 1.15; /* Evita diferencias en la altura de línea */
+    -webkit-tap-highlight-color: transparent; /* Elimina el efecto de resaltado al tocar en móviles */
+    -webkit-text-size-adjust: 100%; /* Evita que Chrome, Safari y Opera escalen el texto automáticamente */
+    -ms-text-size-adjust: 100%; /* Evita que IE y Edge antiguos escalen el texto automáticamente */
+}
+
+body {
+    margin: 0; /* Elimina el margen por defecto del navegador */
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    font-size: 16px; /* Tamaño de fuente estándar */
+    line-height: 1.5;
+    color: #000; /* Color de texto predeterminado negro */
+    background: #fff; /* Fondo blanco por defecto */
+}
+
+header, main, section {
+    display: block; /* Navegadores antiguos no reconocen estas etiquetas HTML5 como bloque */
+}
+
+h1, h2, h3 {
+    margin: 0; /* Eliminar márgenes por defecto */
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+p {
+    margin: 0 0 1rem; /* Mantiene un espacio inferior entre párrafos */
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; /* Quitar los discos predeterminados */
+}
+
+li {
+    margin: 0; 
+    padding: 0;
+}
+
+label {
+    display: inline; /* Para que los labels se comporten como texto en línea */
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    font: inherit;
+    margin: 0;
+    color: inherit; /* Hereda el color del texto */
+    background: transparent;
+    border: none; /* Quitar borde por defecto */
+    padding: 0; 
+    line-height: normal;  /* El navegador decide la altura óptima según la fuente */
+    vertical-align: middle;
+}
+
+table {
+    border-collapse: collapse; /* Elimina el espacio entre celdas */
+    border-spacing: 0; /* Quita el espaciado predeterminado de tablas */
+    width: auto; /* Evita que el ancho se ajuste automáticamente */
+}
+
+tr {
+    vertical-align: middle;
+}
+
+td, th {
+    padding: 0;
+    text-align: left;
+    vertical-align: top;
+}
