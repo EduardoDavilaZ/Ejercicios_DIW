@@ -22,6 +22,7 @@ html{
     font-family: Verdana;
     border: 10px solid black;
     background-color: rgb(197, 238, 255);
+    margin: 40px 120px;
     counter-reset: cont;
     
     /* 7 */
