@@ -1,0 +1,138 @@
+html{
+    background-color: white;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 1260px;
+    height: 712px;
+    background-color: rgb(151, 0, 0); 
+    font-family: Verdana;
+}
+
+header{
+    width: 1196px; /*1260 - 64*/
+    background-color:  rgb(49, 49, 49);
+    color: white;
+    padding: 2rem;
+    h1{
+        margin: 0px;
+        text-align: center;
+    }
+}
+
+nav{
+    width: 1260px;
+    background-color:  rgb(140, 139, 139);
+    height: 66px; /*32px (padding) + 18 (alto de letra aprox) + 16px (padding de li)*/
+    margin-bottom: 45px;
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        margin: 0rem 2rem;
+        
+        li{
+            background-color: rgb(53, 3, 3);
+            display: inline-block;
+            margin: 1rem;
+            padding: .5rem;
+            a{
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                padding: 0rem;
+            }
+        }
+    }
+
+    #ul-iz{
+        float: left;
+    }
+
+    #ul-de{
+        float: right;
+    }
+}
+
+/* ESTILOS DE LAS CAJAS DEL LAYOUT */
+
+#contenedor, aside{
+    float: left;
+}
+
+#contenedor{
+    width: 780px; /*800 - 20px padding*/
+    height: 340px; /*400 - 60px padding*/
+    margin: 0px 20px;
+    padding: 30px 10px;
+    background-color: rgb(146, 146, 146);
+}
+
+aside{
+    width: 340px; /*400 - (30 * 2) padding*/
+    height: 300px; /*400 - (50 * 2) padding*/
+    margin: 0px 20px 0px 0px;
+    background-color: rgb(193, 193, 193);
+    padding: 50px 30px;
+}
+
+footer{
+    width: 1260px;
+    height: 100px;
+    display: flow-root;
+    background-color: rgb(108, 108, 108);
+}
+
+/* ESTILOS DE LAS CAJAS DE CADA CONTENEDOR */
+
+#contenedor p{
+    text-align: justify;
+}
+
+#contenedor form{
+    margin-top: 4em; /*4 veces el tamaño de letra de su contenedor*/
+    padding: 1em 0px 1em 70px; /*separación entre la caja del formulario y los elementos*/
+    background-color: rgb(198, 198, 198);
+
+    label{
+        display: block;
+    }
+
+    input[type=text]{
+        width: 500px; /*El tamaño de los elementos input text es de 500 px.*/
+        padding-left: 10px;
+        border: 0;
+    }
+
+    input[type=submit]{
+        padding-left: 10px;
+        width: 150px;
+        height: 2em;
+        background-color: #D8D8D8;
+        display: block;
+        border: 0;
+    }
+
+    input{
+        margin: .5rem 0rem;
+    }
+}
+
+aside div{
+    width: 150px;
+    img{
+        width: 100%;
+    }
+}
+
+/* 2DA PARTE */
+
+main{
+    background-color: rgb(181, 181, 0);
+    width: 1260px;
+    overflow: hidden; /*Hace que el contenedor tenga en cuenta los 
+                        floats internos y tenga la misma altura que
+                        las cajas flotadas*/
+}

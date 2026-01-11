@@ -1,0 +1,155 @@
+html{
+    background-color: white;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 712px;
+    background-color: rgb(151, 0, 0); 
+    font-family: Verdana;
+}
+
+header{
+    width: 94.92%; /*1196 x 100 % 1260*/
+    background-color:  rgb(49, 49, 49);
+    color: white;
+    padding: 2rem;
+    h1{
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+}
+
+nav{
+    width: 100%; /*1260px*/
+    background-color:  rgb(140, 139, 139);
+    height: 66px; /*32px (padding) + 18 (alto de letra aprox) + 16px (padding de li)*/
+    margin-bottom: 3.57%; /*45 x 100 % 1260*/
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        margin: 0rem 2rem;
+        
+        li{
+            background-color: rgb(53, 3, 3);
+            display: inline-block;
+            margin: 1rem;
+            padding: .5rem;
+            a{
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                padding: 0rem;
+            }
+        }
+    }
+
+    #ul-iz{
+        float: left;
+    }
+
+    #ul-de{
+        float: right;
+    }
+}
+
+/* ESTILOS DE LAS CAJAS DEL LAYOUT */
+
+#contenedor, aside{
+    float: left;
+}
+
+#contenedor{
+    width: 61.90%; /*780px*/
+    height: 26.98%; /*340px*/
+    margin: 0px 1.5625%;
+    padding: 2.38% 0.79%; /*30px 10px*/
+    background-color: rgb(146, 146, 146);
+}
+
+aside{
+    width: 26.98%; /*340 x 100 / 1260*/
+    height: 23.81%; /*340 x 100 / 1260*/
+    margin: 0px 1.5625% 0px 0px;
+    background-color: rgb(193, 193, 193);
+    padding: 3.97% 2.38%;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    display: flow-root;
+    background-color: rgb(108, 108, 108);
+}
+
+/* ESTILOS DE LAS CAJAS DE CADA CONTENEDOR */
+
+#contenedor p{
+    text-align: justify;
+}
+
+#contenedor form{
+    width: 61.90%; /*780px*/
+    margin-top: 4em; /*4 veces el tamaño de letra de su contenedor*/
+    padding: 1em 0px 1em 8.9743%; /*separación entre la caja del formulario y los elementos*/
+    background-color: rgb(198, 198, 198);
+
+    label{
+        display: block;
+    }
+
+    input[type=text]{
+        width: 64.1%; /*500px*/
+        padding-left: 0.79%;
+        border: 0;
+    }
+
+    input[type=submit]{
+        padding-left: 10px;
+        width: 19.23%; /*150px / 180 x 100*/
+        height: 2em;
+        background-color: #D8D8D8;
+        display: block;
+        border: 0;
+    }
+
+    input{
+        margin: .5rem 0rem;
+    }
+}
+
+aside div{
+    width: 44.12%; /*150 / 340 x 100*/
+    img{
+        width: 100%;
+    }
+}
+
+/* 2DA PARTE */
+
+main{
+    background-color: rgb(181, 181, 0);
+    width: 100%;
+    overflow: hidden; /*Hace que el contenedor tenga en cuenta los 
+                        floats internos y tenga la misma altura que
+                        las cajas flotadas*/
+}
+
+/*
+Quiero conseguir:
+    - Quitar el flotamiento para posicionar cada caja una en cima de otra.
+    - Quitar los márgenes.
+    - Que cada caja ocupe el 100% del ancho.
+*/
+
+@media (max-width: 576px) {
+    #contenedor, aside{
+        float: none;
+        margin: 0%;
+        width: 100%;
+    }
+}

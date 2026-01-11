@@ -28,16 +28,16 @@ html{
 }
 
 #contenedorEnLinea{
-    width: 1260px;
-    height: 375px;
-    margin: 20px auto;
+    width: 1240; /* 1280 - (20px * 2) */
+    height: 370px;
+    margin: 20px ;
     background-color: #a68323;
 }
 
 #contenedorEnBloque{
-    width: 1260px;
-    height: 375px;
-    margin: 20px auto;
+    width: 1240; /* 1280 - (20px * 2) */
+    height: 370px;
+    margin: 20px;
     background-color: #457a54;
 }
 
