@@ -1,45 +1,45 @@
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
 /* EJERCICIO 1 */
 
-#nav01{
+#nav01 {
     background-color: rgb(146, 146, 146);
     padding: 1rem;
     width: 100%;
+}
 
-    ul{
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        gap: 10px;
+#nav01 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+}
 
-        li{
-            background-color: black;
-            flex-grow: 1;
-            text-align: center;
-            display: block;
-            padding: .5rem 1rem;
+#nav01 ul li {
+    background-color: black;
+    flex-grow: 1;
+    text-align: center;
+    display: block;
+    padding: .5rem 1rem;
+}
 
-            a{
-                text-decoration: none;
-                color: white;
-            }
-        }
-    }
+#nav01 ul li a {
+    text-decoration: none;
+    color: white;
 }
 
 /* EJERCICIO 2 */
 
-header{
+header {
     width: 100%;
     display: flex;
 }
 
-#logo{
+#logo {
     background-image: url('https://fundacionloyola.com/vguadalupe/wp-content/uploads/2019/12/logotipo.png');
     background-position: center;
     background-size: cover;
@@ -48,30 +48,29 @@ header{
     border: 1px solid black;
 }
 
-#nav02{
+#nav02 {
     background-color: rgb(146, 146, 146);
     width: 600px;
     padding: 10px;
+}
 
-    ul{
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        
-        gap: 10px;
+#nav02 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+}
 
-        li{
-            background-color: black;
-            text-align: center;
-            padding: .5rem 1rem;
-            flex-shrink: 0;
-            flex-basis: 100px;
+#nav02 ul li {
+    background-color: black;
+    text-align: center;
+    padding: .5rem 1rem;
+    flex-shrink: 0;
+    flex-basis: 100px;
+}
 
-            a{
-                text-decoration: none;
-                color: white;
-            }
-        }
-    }
+#nav02 ul li a {
+    text-decoration: none;
+    color: white;
 }
