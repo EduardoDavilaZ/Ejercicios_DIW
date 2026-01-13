@@ -21,7 +21,7 @@ body {
 
 #nav01 ul li {
     background-color: black;
-    flex-grow: 1;
+    flex-grow: 1; /* el espacio sobrante se distribuya en el ancho de cada <li>*/
     text-align: center;
     display: block;
     padding: .5rem 1rem;
@@ -66,7 +66,7 @@ header {
     background-color: black;
     text-align: center;
     padding: .5rem 1rem;
-    flex-shrink: 0;
+    flex-shrink: 0; 
     flex-basis: 100px;
 }
 
