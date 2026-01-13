@@ -1,0 +1,175 @@
+html{
+    background-color: white;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 712px;
+    background-color: rgb(151, 0, 0); 
+    font-family: Verdana;
+}
+
+header{
+    width: 94.92%; /*1196 x 100 % 1260*/
+    background-color:  rgb(49, 49, 49);
+    color: white;
+    padding: 2rem;
+    h1{
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+}
+
+nav{
+    width: 100%; /*1260px*/
+    background-color:  rgb(140, 139, 139);
+    height: 66px; /*32px (padding) + 18 (alto de letra aprox) + 16px (padding de li)*/
+    margin-bottom: 3.57%; /*45 x 100 % 1260*/
+    
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        margin: 0rem 2rem;
+        
+        li{
+            background-color: rgb(53, 3, 3);
+            display: inline-block;
+            margin: 1rem;
+            padding: .5rem;
+            a{
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                padding: 0rem;
+            }
+        }
+    }
+
+    #ul-iz{
+        float: left;
+    }
+
+    #ul-de{
+        float: right;
+    }
+}
+
+/* ESTILOS DE LAS CAJAS DEL LAYOUT */
+
+#contenedor, aside{
+    float: left;
+}
+
+#contenedor{
+    width: 61.90%; /*780px*/
+    height: 340px; /*340px*/
+    margin: 0px 1.5625%;
+    padding: 2.38% 0.79%; /*30px 10px*/
+    background-color: rgb(146, 146, 146);
+    position: relative;
+}
+
+aside{
+    width: 26.98%; /*340 x 100 / 1260*/
+    height: 23.81%; /*340 x 100 / 1260*/
+    margin: 0px 1.5625% 0px 0px;
+    background-color: rgb(193, 193, 193);
+    padding: 3.97% 2.38%;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    display: flow-root;
+    background-color: rgb(108, 108, 108);
+}
+
+/* ESTILOS DE LAS CAJAS DE CADA CONTENEDOR */
+
+#contenedor p{
+    text-align: justify;
+    margin: 0; /*Quitar el margen por defecto*/
+}
+
+#contenedor form{
+    width: 61.90%; /*780px*/
+
+    /*Modificado, quitar el margin-top porque ya se está usando posicionamiento absoluto y top*/
+    margin-top: 0em; /*4 veces el tamaño de letra de su contenedor*/ 
+    
+    padding: 1em 0px 01em 8.9743%; /*separación entre la caja del formulario y los elementos*/
+    background-color: rgb(198, 198, 198);
+    position: absolute;
+
+    /*Coloca el formulario a 200px de del borde superior de la caja contenedora (la izquierda).*/
+    top: 200px;
+    
+
+    label{
+        display: block;
+    }
+
+    input[type=text]{
+        width: 64.1%; /*500px*/
+        padding-left: 0.79%;
+        border: 0;
+    }
+
+    input[type=submit]{
+        padding-left: 10px;
+        width: 19.23%; /*150px / 180 x 100*/
+        height: 2em;
+        background-color: #D8D8D8;
+        display: block;
+        border: 0;
+    }
+
+    input{
+        margin: .5rem 0rem;
+    }
+}
+
+aside div{
+    width: 44.12%; /*150 / 340 x 100*/
+    img{
+        width: 100%;
+    }
+}
+
+/* 2DA PARTE */
+
+main{
+    background-color: rgb(181, 181, 0);
+    width: 100%;
+    overflow: hidden; /*Hace que el contenedor tenga en cuenta los 
+                        floats internos y tenga la misma altura que
+                        las cajas flotadas*/
+}
+
+
+/*
+Realiza una media query para resoluciones iguales o menores de 1024:
+    * Coloca la caja derecha debajo de la izquierda. Quita o ajusta los márgenes para que se vea bien. La imagen ocupará el 60% del ancho.
+    * El formulario ya no se colocará según su caja contenedora, estará a 2em de la caja anterior (el texto).
+*/
+
+@media (max-width: 1024px) {
+    #contenedor, aside{
+        float: none;
+        margin: 0%;
+        width: 100%;
+    }
+
+    aside div{ /*El div que contiene a la imagen*/
+        width: 60%;
+    }
+
+    #contenedor form{
+        position: static; /*Quitar el posicionamiento absoluto*/
+        margin-top: 2rem; /*Ahora estará a 2 em del párrafo anterior*/
+    }
+}
